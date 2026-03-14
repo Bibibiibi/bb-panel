@@ -217,6 +217,7 @@ install_panel() {
   echo "🔐 生成 SSL 自签名证书..."
   SSL_KEYSTORE_PASSWORD=$(generate_random)
   mkdir -p ssl
+  rm -f ssl/keystore.p12 # 删除旧证书，避免 keytool 密码错误
 
   # 使用 Docker 中的 keytool 生成证书（避免依赖宿主机 Java）
   docker run --rm -v "$(pwd)/ssl:/ssl" eclipse-temurin:21-jre \
