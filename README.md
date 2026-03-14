@@ -66,4 +66,4 @@ curl -L https://raw.githubusercontent.com/Bibibiibi/flux-panel/refs/heads/beta/i
 作者对因使用本项目所造成的任何直接或间接损失概不负责，亦不提供任何形式的担保、承诺或技术支持。  
 
 
-请务必在合法、合规、安全的前提下使用本项目。  
+请务必在合法、合规、安全的前提下使用本项目。
