@@ -1,17 +1,5 @@
 # bb-panel转发面板 基于哆啦A梦转发面板二次修改 加上了加密通讯
 
-本项目基于 [go-gost/gost](https://github.com/go-gost/gost) 和 [go-gost/x](https://github.com/go-gost/x) 两个开源库，实现了转发面板。
----
-## 特性
-
-- 支持按 **隧道账号级别** 管理流量转发数量，可用于用户/隧道配额控制
-- 支持 **TCP** 和 **UDP** 协议的转发
-- 支持两种转发模式：**端口转发** 与 **隧道转发**
-- 可针对 **指定用户的指定隧道进行限速** 设置
-- 支持配置 **单向或双向流量计费方式**，灵活适配不同计费模型
-- 提供灵活的转发策略配置，适用于多种网络场景
-
-
 ## 部署流程
 ---
 ### Docker Compose部署
@@ -23,16 +11,6 @@ curl -L https://raw.githubusercontent.com/Bibibiibi/bb-panel/refs/heads/main/pan
 节点端(稳定版)：
 ```bash
 curl -L https://raw.githubusercontent.com/Bibibiibi/bb-panel/refs/heads/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
-
-```
-
-面板端(开发版)：
-```bash
-curl -L https://raw.githubusercontent.com/Bibibiibi/bb-panel/refs/heads/beta/panel_install.sh -o panel_install.sh && chmod +x panel_install.sh && ./panel_install.sh
-```
-节点端(开发版)：
-```bash
-curl -L https://raw.githubusercontent.com/Bibibiibi/bb-panel/refs/heads/beta/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 
 ```
 
